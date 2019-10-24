@@ -69,10 +69,10 @@ int main(void) {
 
     while(1)
     {
-        // Toggle P1.0 output
+        // Toggle 9.7 output
         GPIO_toggleOutputOnPin(
-            GPIO_PORT_P1,
-			GPIO_PIN0
+            GPIO_PORT_P9,
+			GPIO_PIN7
 			);
 
         // Delay
