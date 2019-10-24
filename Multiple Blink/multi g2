@@ -53,7 +53,7 @@
 int main(void) {
 
     volatile uint32_t i;
-
+int x=0;
     // Stop watchdog timer
     WDT_A_hold(WDT_A_BASE);
 
@@ -76,9 +76,12 @@ int main(void) {
 		
       
   // Toggle P1.6 output
+  	if(x%3==0)
         GPIO_toggleOutputOnPin(
             GPIO_PORT_P1,
 			GPIO_PIN6
+			
+			x++;
 			);
 
         // Delay
